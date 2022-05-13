@@ -383,6 +383,7 @@ button {
 
 .home__description {
   margin-bottom: var(--mb-1);
+  text-align: justify;
 }
 
 .home__buttons {
