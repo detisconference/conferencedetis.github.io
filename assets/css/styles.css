@@ -315,13 +315,19 @@ button {
   transition-timing-function: ease-in-out;
 }
 
+.home__img:hover {
+  transform: scale(110%);
+}
+
 .collaboration_img {
   padding-right: 2rem;
   height: 4rem;
   margin-bottom: 1rem;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.home__img:hover {
+.collaboration_img:hover {
   transform: scale(110%);
 }
 
@@ -720,6 +726,10 @@ button {
     height: 200px;
   }
 
+  .collaboration_img {
+    height: auto;
+  }
+
   .about__img {
     height: 200px;
   }
@@ -742,6 +752,10 @@ button {
     /* height: 5.5rem; */
     transition: 0.3s;
     transition-timing-function: ease-in-out;
+  }
+
+  .collaboration_img {
+    height: auto;
   }
 
   .scroll-header {
