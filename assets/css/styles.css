@@ -403,6 +403,40 @@ button {
   justify-content: space-between;
 }
 
+.sponsor__content{
+  padding: 0;
+  margin: 2rem;
+}
+
+.sponsor__data {
+  text-align: center;
+}
+
+.sponsor__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  line-height: 109%;
+  margin-bottom: 0;
+  color: var(--title-color);
+}
+
+.sponsor__grid {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor__img {
+  padding: 0 .5rem;
+  height: 3rem;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.sponsor__img:hover {
+  transform: scale(110%);
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -758,6 +792,11 @@ button {
     height: auto;
   }
 
+  .sponsor__img {
+    padding: 0 2rem;
+    height: 6rem;
+  }
+
   .scroll-header {
     background: hsla(180, 28%, 95%, 0.4);
     backdrop-filter: blur(12px);
@@ -876,6 +915,10 @@ button {
     gap: 3rem;
   }
 
+  .sponsor__img {
+    height: 8rem;
+  }
+
   .about__content {
     padding: 8rem 4rem 2rem;
   }
@@ -950,6 +993,10 @@ button {
 
   .home__img:hover {
     transform: scale(110%) translateY(2rem);
+  }
+
+  .sponsor__img {
+    height: 10rem;
   }
 
   .about__data {
