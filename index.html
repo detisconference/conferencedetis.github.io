@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="lazyload.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="autocom, autocom.org.in, autocom-23,autocom-22, autocom gehu, International Conference on Automation and Computation, AutoCom-23,autocom-22,International Conference,GEHU, graphic era hill university, computation, automation, conference, computation conference, dehradun, conference, dehradun, uttarakhand, uttarakhand conference, conference on automation, conference computation,conference graphic era hill">
     <meta name="keywords" content="autocom, autocom.org.in, autocom-23,autocom-22 autocom gehu, International Conference on Automation and Computation, AutoCom-23,autocom-22,International Conference,GEHU, graphic era hill university, computation, automation, conference, computation conference, dehradun, conference, dehradun, uttarakhand, uttarakhand conference, conference on automation, conference computation,conference graphic era hill">
@@ -34,13 +35,13 @@
     </header>
 
     <section class="home">
-      <img class="ok" src="ASSETS\newok1.png"></img>
-      <video class="video-slide active" src="ASSETS\Vid\1.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="ASSETS\Vid\2.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="ASSETS\Vid\sq.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="ASSETS\Vid\dots.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="ASSETS\Vid\ok.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="ASSETS\Vid\3.mp4" autoplay muted loop></video>
+      <img class="ok" data-src="ASSETS\newok1.png"></img>
+      <video class="video-slide active" data-src="ASSETS\Vid\1.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
+      <video class="video-slide" data-src="ASSETS\Vid\2.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
+      <video class="video-slide" data-src="ASSETS\Vid\sq.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
+      <video class="video-slide" data-src="ASSETS\Vid\dots.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
+      <video class="video-slide" data-src="ASSETS\Vid\ok.mp4"  src="transparent-placeholder.png" autoplay muted loop></video>
+      <video class="video-slide" data-src="ASSETS\Vid\3.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
       <div class="content active">
         <h1>AUTOCOM<br><span>Automation & Computation</span></h1>
         <p>To connect scholastic researchers, specialists and professionals from industry and academia to foster collaborations in different areas of Engineering, Technology and Innovation.</p>
@@ -218,7 +219,15 @@
         sliderNav(i);
       });
     });
+    
+    
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: "video"
+  });
     </script>
+    
+
+ 
 
   </body>
 </html>
