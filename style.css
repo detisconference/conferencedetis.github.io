@@ -101,6 +101,7 @@ section{
 
 .home .content.active{
   display: block;
+  max-height: 70vh;
 }
 
 
@@ -305,11 +306,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(36, 36, 36, 0.5);
   }
 
   header .navigation .navigation-items a{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255s);
     font-size: 1.2em;
     margin: 20px;
   }
@@ -321,27 +322,20 @@ section{
 
   header .navigation.active .navigation-items{
     
-    width: 600px;
-    max-width: 600px;
+    width: 90vw;
+    max-width: 90vh;
+    height: 60vh;
     margin: 20px;
-    padding: 40px;
+    padding:80px;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.628);
   }
 
-  .menu-btn{
-    background: url(menu.png)no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    display: none;
-  }
+
 
   .menu-btn.active{
     z-index: 999;
@@ -378,7 +372,7 @@ section{
 } 
 @media (min-width:600) { 
   .menu-btn .navigation-items{
- display: none;
+ display: flex;
 }
   
   
@@ -490,19 +484,55 @@ width: 10px;
 }}
 
 @media only screen and (max-width: 740px) {
+  .menu-btn{
+    background: url(menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display:flex;
+  }
+
+  .home .content.active{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70vh;
+  }
+  .home .content.active .hero-section {
+
+    position: absolute;
+    left: 0px;
+    
+    bottom:10vh;
+    min-width: 90vw;
+    min-height: 60vh;
+  }
+  .card__content{
+  left: 10%;
+  position: absolute;
+  top: 35%;
+  justify-content:center ;
+}
+  .home .content.active .hero-section .card-grid .card{
+min-width:80vw;
+min-height: 30vh;
+  }
+
 .prev, .next,.text {font-size: 14px}
 header .navigation{
   display: none;
 }
-.home .content p{
-display: none;
-}
+
 .home .content h1{
   font-size: 1em;
   line-height: 30px;
   margin-block-start: 0.3em;
   margin-block-end: 3em;}
-  
+.home .content a{
+  margin-top: 10px;
+}
 .home .ok{
   display: block;
   z-index: 000;
@@ -526,6 +556,7 @@ display: none;
   --spacing-m: 16px;
   --spacing-l: 2px;
   --spacing-n: 50px;
+  --spacing-p:15px;
   --spacing-xl: 32px;
   --spacing-xxl: 0px;
   --width-container: 1200px;
@@ -536,6 +567,10 @@ display: none;
   display: flex;
   min-height: 100%;
   justify-content: center;
+  position: absolute;
+  bottom:8vh;
+  min-width: 90vw;
+  min-height: 60vh;
   padding: var(--spacing-xxl) var(--spacing-l);
 }
 
@@ -549,21 +584,18 @@ display: none;
   border-radius: var(--spacing-l);
 }
 
-@media(min-width: 540px){
-  .card-grid{
-    grid-template-columns: repeat(1, 1fr); 
-  }
-}
-
-@media(min-width: 960px){
-  .card-grid{
-    grid-template-columns: repeat(3, 1fr); 
-  }
-}
 
 .card{
+ 
   list-style: none;
   position: relative;
+  max-height: 30vh;
+  max-width: 80vw;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  min-width:15vw;
+  min-height: 20vh;
 }
 
 .card:before{
@@ -601,25 +633,28 @@ display: none;
 }
 
 .card__content{
-  left: 0;
-  padding: var(--spacing-n);
+  left: 10%;
   position: absolute;
-  top: 0;
+  top: 35%;
   justify-content:center ;
-}
-
-.card__category{
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
 }
 
 .card__heading{
   color: var(--text-lighter);
-  font-size: 1.9rem;
+  font-size: 5vw;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.128);
   line-height: 1.4;
   word-spacing: 100vw;
 
+}
+@media only screen and (min-width: 740px)
+{
+  .home .content.active .hero-section .card .card__heading{
+    color: var(--text-lighter);
+    font-size: 3vw;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.128);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  
+  }
 }
