@@ -35,7 +35,7 @@
     </header>
 
     <section class="home">
-      <img class="ok" src="ASSETS\newok1.png"></img>
+      <img class="ok" data-src="ASSETS\newok1.png" src="transparent-placeholder.png"></img>
       <video class="video-slide active" data-src="ASSETS\Vid\1.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
       <video class="video-slide" data-src="ASSETS\Vid\2.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
       <video class="video-slide" data-src="ASSETS\Vid\sq.mp4" src="transparent-placeholder.png" autoplay muted loop></video>
@@ -55,17 +55,20 @@
       </div>
       
       <div class="content">
+        <h1>AUTOCOM<br><span>Team</span></h1>
         <section class="hero-section">
           <div class="card-grid">
-            <a class="card" href="org.html">
+            <a class="card" href="#">
               <div class="card__background" style="background-image: url(ASSETS/IMAGES/org.jpg)"></div>
               <div class="card__content">
+                <p class="card__category">Category</p>
                 <h3 class="card__heading">Organizers</h3>
               </div>
             </a>
-            <a class="card" href="stu.html">
+            <a class="card" href="#">
               <div class="card__background" style="background-image: url(ASSETS/IMAGES/stu.jpg)"></div>
               <div class="card__content">
+                <p class="card__category">Category</p>
                 <h3 class="card__heading">Student <br> Members</h3>
               </div>
             </a>
@@ -154,7 +157,7 @@
       </div>
       <div class="content">
         <h1>AUTOCOM<br>About Us<span></span></h1>
-        <p>Computational science draws information from the field of Computer science and Mathematics. It provides solutions to scientific or engineering problems. Computational science is popularly thought of as the third leg of science along with experimental and theoretical. The session invites research papers to discuss the applications of various computational science technologies in real life.</p>
+        <p>There is thin line between Computational science and Computer science. Computational science draws information from the field of Computer science and Mathematics, and provides solutions to scientific or engineering problems. Even though the areas are quite distinct, many of the topics overlap in computational and computer science. Computational science is popularly thought of as the third leg of science along with experimental and theoretical science. Computational science is a broad discipline and can be simply defined as refers to the use of computers, networks, storage devices, software, and algorithms to solve problems. The problems can be of various types and categories like: retrieving knowledge, doing simulations, controlling devices, building large databases and many more. Also, it can be defined as a means to gain understanding of science principally through the use and analysis of mathematical models on high performance computers. The session invites research papers to discuss the applications of various computational science technologies in real life and how these applications can make the life better.</p>
       </div>
       
       <div class="content">
@@ -219,7 +222,7 @@
     
     
     var lazyLoadInstance = new LazyLoad({
-      elements_selector: " video"
+      elements_selector: "img, video"
   });
     </script>
     
