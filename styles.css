@@ -21,8 +21,8 @@ body{
 
 }
 .autocom-logo{
-    width:130px;
-    height:130px;
+    width:150px;
+    height:150px;
 }
 .ieee-logo {
     width: 150px;
@@ -30,8 +30,8 @@ body{
     padding-bottom: 20px;
 }
 .first {
-    width: 200px;
-    height: 290px;
+    width: 170px;
+    height: 270px;
     float: left;
     padding-top: 30px;
 
@@ -735,15 +735,14 @@ body{
 @media(max-width:480px)
 {
     .autocom-logo {
-            width: 30%;
-            height: 30%;
-            padding-right: 5%;
+            width: 50%;
+            height: 50%;
+    
         }
     
         .ieee-logo {
-            width: 50%;
-            height: 30%;
-            padding-top: 2em;
+            width: 60%;
+            height: 40%;
         }
     .first{
         width:100%;
@@ -752,10 +751,4 @@ body{
     .second{
         width:100%;
     }
-    .autocom-img{
-        width: 30%;
-        height: 30%;
-        padding-bottom: 5%;
-    }
-
 }
