@@ -10,6 +10,7 @@ body{
     padding-top:0px;
     height:330px;
     width:100%;
+    
 }
 
 
@@ -77,7 +78,7 @@ body{
 .write-up4{
     font-size: x-large;
     font-weight: 600;
-    color: brown;
+    color: rgb(89, 2, 2);
     line-height:1rem
 }
 .write-up5{
@@ -130,7 +131,7 @@ body{
     display: none;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -139,12 +140,13 @@ body{
         float: right;
         display: block;
     }
+        
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .topnav.responsive {
-        position: relative;
+        position: absolute;
     }
 
     .topnav.responsive a.icon {
@@ -155,9 +157,10 @@ body{
 
     .topnav.responsive a {
         float: none;
-        display: block;
+        display:block;
         text-align: left;
     }
+        
 }
 
 
@@ -170,7 +173,7 @@ body{
    margin-top:30px;
     text-align: center;
     justify-content: center;
-    background-color: brown;
+    background-color: rgb(113, 3, 3);
     width:1250px;
     height: 250px;
 
@@ -189,6 +192,19 @@ body{
         overflow:hidden;
         padding-top: 30px;
         color: white;
+        
+}
+.second-container-second h1{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.second-container-second h4{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.second-container-second h2{
+    font-weight: bold;
+    font-size: xx-large;
 }
 .second-container-third{
     width: 230px;
@@ -304,4 +320,435 @@ body{
 }
 
 
+/* =========================================================================================================================================== */
 
+
+@media (max-width: 1500px) {
+
+    .main {
+        text-align: center;
+        top: 0;
+        overflow: hidden;
+    }
+    .autocom-logo{
+    width:180px;
+    height:150px;
+}
+.ieee-logo {
+    width: 150px;
+    height: 100px;
+    padding-bottom: 20px;
+}
+.graphic-logo {
+    width: 200px;
+    height: 200px;
+}
+    .first {
+        width: 15%;
+    }
+    
+    .second {
+        width: 70%;
+    }
+
+    .third {
+        width: 15%;
+    }
+
+    .second-container {
+        margin-left: 0px;
+        width: 80%;
+        margin-left: 10%;
+        height:250px;
+    }
+
+    .second-container-first {
+        width:25%;
+    }
+
+    .second-container-second {
+        width: 50%;
+    }
+
+    .second-container-third {
+        width: 25%;
+    }
+
+    .third-container {
+        width: 100%;
+    }
+    .third-container1{
+    
+    margin-left:150px;
+    width:700px;
+    float:left;
+    text-align: justify;
+    text-justify: inter-word;
+
+
+}
+.third-container2{
+        margin-right: 60px;
+        width:400px;
+        float:right;
+        text-align: justify;
+        text-justify: inter-word;
+}
+    
+    .graphic-img2 {
+        margin-left: 0px;
+        left:0;
+
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    
+    .main {
+        text-align: center;
+        top:0;
+        overflow: hidden;
+    }
+    .autocom-logo{
+        width:100%;
+        height:80%;
+        
+    }
+    .ieee-logo{
+        width:60%;
+    }
+    .graphic-logo{
+        width: 100%;
+        height: 80%;
+    }
+    .first{
+        width:20%;
+        padding-top: 5%;
+    }
+    .second{
+        width:60%;
+        
+    }
+    .second h1{
+        font-size: larger;
+    }
+    .second h2{
+        font-size: large;
+    }
+    .second h3{
+        font-size: larger;
+    }
+    .second h4{
+        font-size:medium;
+    }
+    .write-up6{
+        font-size: large;
+    }
+    .third{
+        width:20%;
+        padding-top: 5%;
+    }
+    .second-container{
+        margin-left: 0px;
+        width:100%;
+        overflow:hidden;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .second-container-first{
+        width:25%;
+        left:0;
+        height: 100%;
+    }
+    .second-container-second {
+        width: 50%;
+        height: 100%;
+    }
+    .second-container-third{
+        width:25%;
+        height: 100%;
+    }
+    .graphic-img{
+        
+        width: 80%;
+        height: 100%;
+    }
+    .autocom-img{
+        width: 80%;
+        height:85%;
+    }
+    .second-container-second h1 {
+            font-weight: bold;
+            font-size: x-large;
+    }
+    .second-container-second h4 {
+            font-weight: bold;
+            font-size: x-large;
+    }
+    .second-container-second h2 {
+            font-weight: bold;
+            font-size: x-large;
+    }
+    .second-container-third {
+        width: 25%;
+    }
+    .third-container{
+        width:100%;
+    }
+    .third-container1{
+        width:60%;
+        margin-left:20px;
+    }
+    .third-container2{
+        width:30%;
+        margin-right:20px;
+    }
+    .graphic-img2{
+        margin-left: 0px;
+        width:80%;
+    }
+    .ieee{
+        width:60%;
+    }
+}
+@media(max-width:992px)
+{
+    .autocom-logo {
+            width: 100%;
+            height: 60%;
+        }
+    
+        .ieee-logo {
+            width: 60%;
+        }
+    
+        .graphic-logo {
+            width: 100%;
+            height: 60%;
+        }
+    .first{
+        width:20%;
+        float:left;
+    }
+    .second{
+        width:60%;
+
+    }
+.third{
+    width:20%;
+
+}
+}
+@media (max-width: 768px)
+{
+    .autocom-logo{
+        width:70%;
+        height:60%;
+    }
+    .first{
+        
+        padding-top:15%;
+        width:30%;
+        height: auto;
+    }
+    .second{
+        padding-top: 15%;
+        width:70%;
+        
+    }
+        .graphic-logo {
+            width: 70%;
+            height: 60%;
+
+        }
+        .main{
+            height: auto;
+        }
+    .third{
+        /* padding-top:10%; */
+        padding-top: 15%;
+        width:0%;
+        height: auto;
+    }
+    .topnav{
+        position: absolute;
+        top:0;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+
+
+    .main {
+        text-align: center;
+        top: 0;
+        overflow: hidden;
+        height: auto;
+        margin-top:40px;
+    }
+
+    .autocom-logo {
+        width: 70%;
+        height: 50%;
+
+    }
+
+    .ieee-logo {
+        width: 80%;
+        height:40%;
+    }
+
+    .graphic-logo {
+        width: 50%;
+        height: 40%;
+    }
+
+    .first {
+        width: 40%;
+        padding-top: 15%;
+    }
+
+    .second {
+        width: 60%;
+        padding-top: 10%;
+        height:auto;
+        padding-bottom:10px;
+    }
+
+    .second h1 {
+        font-size: larger;
+    }
+
+    .second h2 {
+        font-size: large;
+    }
+
+    .second h3 {
+        font-size: larger;
+    }
+
+    .second h4 {
+        font-size: medium;
+    }
+
+    .write-up6 {
+        font-size: large;
+    }
+
+    .third {
+        padding-top: 20%;
+        width: 0%;
+        height:50%;
+    }
+    .topnav{
+        position: absolute;
+        top:0;
+        width: 100%;
+    }
+
+    .second-container {
+        margin-left: 0px;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .second-container-first {
+        width: 100%;
+        left: 0;
+        height: 100%;
+    }
+
+    .second-container-second {
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-container-third {
+        width: 100%;
+        height: 100%;
+    }
+
+    .graphic-img {
+
+        width: 80%;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .autocom-img {
+        width: 40%;
+        height: 20%;
+    }
+
+    .second-container-second h1 {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .second-container-second h4 {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .second-container-second h2 {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+
+    .third-container {
+        width: 100%;
+    }
+
+    .third-container1 {
+        width: 100%;
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    .third-container2 {
+        width: 100%;
+        margin: 0px;
+        padding:30px;
+    }
+
+    .graphic-img2 {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .IEEE {
+        width: 60%;
+    }
+}
+
+
+
+
+@media(max-width:480px)
+{
+    .autocom-logo {
+            width: 50%;
+            height: 50%;
+    
+        }
+    
+        .ieee-logo {
+            width: 60%;
+            height: 40%;
+        }
+    .first{
+        width:100%;
+
+    }
+    .second{
+        width:100%;
+    }
+}
