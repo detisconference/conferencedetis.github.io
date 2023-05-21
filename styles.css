@@ -130,6 +130,12 @@ body{
 .topnav .icon {
     display: none;
 }
+.nav-logo{
+    width:0%;
+}
+.autocom-logo2{
+    width:0%;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
@@ -194,6 +200,10 @@ body{
         color: white;
         
 }
+.second-container-third .graphic-logo2{ 
+    width:0%;
+}
+
 .second-container-second h1{
     font-weight: bold;
     font-size: xx-large;
@@ -590,8 +600,23 @@ body{
         overflow: hidden;
         height: auto;
         margin-top:40px;
+        /* height:100vh; */
     }
-
+        .nav-logo {
+            width: 30px;
+        }
+        .nav-logo a{
+            padding: 0%;
+            padding-top:10px;
+        }
+    #myTopnav{
+        padding-left:20px;
+    }
+        .autocom-logo2 {
+            width: 40px;
+            height: 30px;
+        }
+    
     .autocom-logo {
         width: 70%;
         height: 50%;
@@ -655,36 +680,54 @@ body{
         margin-left: 0px;
         width: 100%;
         overflow: hidden;
-        height: auto;
+        height: 100vh;
         margin-bottom: 20px;
     }
 
     .second-container-first {
         width: 100%;
         left: 0;
-        height: 100%;
+        height: 30vh;
+        margin-top:20px;
     }
 
     .second-container-second {
         width: 100%;
-        height: 100%;
+        height: 50vh;
+        right:0;
+        /* margin-top:15vh; */
+        float :right;
+        position: relative;
+        top:22vh;
     }
+    .second-container-third .autocom-logo{
+        padding-right:10px;
+    }
+        .second-container-third .graphic-logo2 {
+            width: 30%;
+            padding-left:20px;
+        }
 
     .second-container-third {
+        width: 100%;
+        float: left;
+        height: 20vh;
+        left:0;
+        padding-top:0px;
+        float :left;
+        position: relative;
+        bottom:45vh;
+    }
+
+    .graphic-img {
         width: 100%;
         height: 100%;
     }
 
-    .graphic-img {
-
-        width: 80%;
-        height: 100%;
-        margin-top: 30px;
-    }
-
     .autocom-img {
-        width: 40%;
-        height: 20%;
+        
+        width: 30%;
+        height: 100%;
     }
 
     .second-container-second h1 {
