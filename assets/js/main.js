@@ -83,3 +83,23 @@ sr.reveal(`.home-swiper`)
 sr.reveal('.about__content')
 sr.reveal('.subpage__title,.subpage__subtitle',{origin: 'left'})
 sr.reveal('.about__img',{origin: 'right'})
+
+
+// gallery anima
+
+
+$(document).ready(function(){
+    $(".fancybox").fancybox({
+          openEffect: "none",
+          closeEffect: "none"
+      });
+      
+      $(".zoom").hover(function(){
+          
+          $(this).addClass('transition');
+      }, function(){
+          
+          $(this).removeClass('transition');
+      });
+  });
+      
