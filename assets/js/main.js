@@ -88,7 +88,6 @@ sr.reveal('.about__img',{origin: 'right'})
 // gallery anima
 
 
-
 $(document).ready(function(){
     $(".fancybox").fancybox({
           openEffect: "none",
