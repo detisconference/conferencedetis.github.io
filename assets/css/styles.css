@@ -232,8 +232,8 @@ button {
   transition-timing-function: ease-in-out;
 }
 .nav_img_ieee{
-height:50%;
-width:50%;
+height:10%;
+width:10%;
 }
 .nav__img:hover {
   transform: translateY(-2rem);
