@@ -184,7 +184,7 @@ button {
 }
 .nav__logo-img-ieee {
   width: 3rem;
-  height: 100%;
+  height: 150%;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
