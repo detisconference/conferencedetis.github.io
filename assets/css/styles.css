@@ -183,8 +183,8 @@ button {
   transition-timing-function: ease-in-out;
 }
 .nav__logo-img-ieee {
-  width: 2.5rem;
-  height: 130%;
+  width: 100%;
+  height: 100%;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
