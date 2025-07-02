@@ -209,7 +209,7 @@ button {
   .nav__menu {
     position: fixed;
     width: 100%;
-    background-color: hsla(180, 28%, 95%, 0.4);
+    background-color: hsla(265, 28%, 95%, 0.4);
     backdrop-filter: blur(12px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     top: -150%;
