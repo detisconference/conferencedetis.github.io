@@ -17,17 +17,16 @@
   --table-color-alt: hsl(200, 45%, 70%);
 
   /*Green gradient*/
-  /* --body-color: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
-  --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%); */
+  /* --body-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
+  --container-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%); */
 
   /*Red gradient*/
   --body-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
   --container-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
 
-
   /*Black solid*/
-  /* --body-color: hsl(30, 8%, 8%);
-  --container-color: hsl(30, 8%, 10%); */
+  /* --body-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
+  --container-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%); */
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
