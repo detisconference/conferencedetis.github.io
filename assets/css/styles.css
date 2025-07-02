@@ -21,8 +21,9 @@
   --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%); */
 
   /*Red gradient*/
-  --body-color: linear-gradient(159deg, rgba(255,255,255,1) 0%, rgba(0,107,143,1) 87%, rgba(0,49,65,1) 100%);
-  --container-color:linear-gradient(159deg, rgba(255,255,255,1) 0%, rgba(0,107,143,1) 87%, rgba(0,49,65,1) 100%);
+  --body-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
+  --container-color: linear-gradient(159deg, rgba(242,230,255,1) 0%, rgba(158,105,245,1) 87%, rgba(86,0,214,1) 100%);
+
 
   /*Black solid*/
   /* --body-color: hsl(30, 8%, 8%);
@@ -209,7 +210,7 @@ button {
   .nav__menu {
     position: fixed;
     width: 100%;
-    background-color: hsla(265, 28%, 95%, 0.4);
+    background-color: hsla(180, 28%, 95%, 0.4);
     backdrop-filter: blur(12px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     top: -150%;
