@@ -22,7 +22,7 @@
 
   /*Red gradient*/
   --body-color: linear-gradient(135deg, rgba(153,102,255,1) 0%, rgba(128,64,255,1) 100%);
-  --container-color: linear-gradient(135deg, rgba(153,102,255,1) 0%, rgba(128,64,255,1) 100%);
+  --container-color: linear-gradient(135deg, rgba(153,102,255,1) 0%, rgba(128,64,255,1) 50%);
 
   /*Black solid*/
   /* --body-color: linear-gradient(135deg, rgba(153,102,255,1) 0%, rgba(128,64,255,1) 100%);
