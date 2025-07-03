@@ -492,10 +492,8 @@ button {
 /*=============== ABOUT ===============*/
 .about__data {
   padding: 1rem 0;
-  align-content: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .about__img {
@@ -843,10 +841,6 @@ button {
     gap: 4rem;
   }
 
-  .about__data {
-    padding: 1rem 0;
-    column-gap: 8rem;
-  }
 
   .nav__logo-img {
     width: 4rem;
@@ -991,9 +985,6 @@ button {
     height: 10rem;
   }
 
-  .about__data {
-    padding: 1rem 3rem;
-  }
 
   .about__img {
     height: 500px;
