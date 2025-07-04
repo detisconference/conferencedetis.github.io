@@ -21,6 +21,64 @@
     <link rel="stylesheet" href="assets\css\styles.css">
 
     <title>AutoCom-25</title>
+
+        <style>
+            .speaker-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        
+            .speaker-card {
+            background: linear-gradient(to bottom right, #dfefff, #c0d4ff);
+            border-radius: 20px;
+            padding: 2rem 1rem;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4); /* ✅ subtle white border */
+            }
+
+        
+            .speaker-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+        
+            .speaker-card img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                border: 5px solid white;
+            }
+        
+            .speaker-name {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #000;
+                margin-bottom: 0.25rem;
+            }
+        
+            .speaker-title {
+                font-size: 0.9rem;
+                color: #6666cc;
+            }
+        
+            /* Ensure the last row (with 2 items) is centered */
+            .speaker-row {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        </style>
+
+    
 </head>
 
 <body>
@@ -101,110 +159,58 @@
                        <!-- Page Content -->
                       <div class="container page-top">
                            <div class="row">
-                   <style>
-    .speaker-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
+                  
 
-    .speaker-card {
-        background: linear-gradient(to bottom right, #dfefff, #c0d4ff);
-        border-radius: 20px;
-        padding: 2rem 1rem;
-        text-align: center;
-        width: 300px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .speaker-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .speaker-card img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-        border: 5px solid white;
-    }
-
-    .speaker-name {
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: #000;
-        margin-bottom: 0.25rem;
-    }
-
-    .speaker-title {
-        font-size: 0.9rem;
-        color: #6666cc;
-    }
-
-    /* Ensure the last row (with 2 items) is centered */
-    .speaker-row {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-</style>
-
-<!-- Speaker Cards -->
-<div class="speaker-grid">
-    <!-- Row 1 -->
-    <div class="speaker-card">
-        <img src="images/speaker/1.jpg" alt="Speaker 1">
-        <div class="speaker-name">Dr. Jay Prakash Saini</div>
-        <div class="speaker-title">Vice Chancellor</div>
-    </div>
-    <div class="speaker-card">
-        <img src="images/speaker/8.jpg" alt="Speaker 2">
-        <div class="speaker-name">Chandra Prakash Priyadarshi</div>
-        <div class="speaker-title">Registrar</div>
-    </div>
-    <div class="speaker-card">
-        <img src="images/speaker/3.jpg" alt="Speaker 3">
-        <div class="speaker-name">Speaker 3</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-
-    <!-- Row 2 -->
-    <div class="speaker-card">
-        <img src="images/speaker/4.jpg" alt="Speaker 4">
-        <div class="speaker-name">Speaker 4</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-    <div class="speaker-card">
-        <img src="images/speaker/5.jpg" alt="Speaker 5">
-        <div class="speaker-name">Speaker 5</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-    <div class="speaker-card">
-        <img src="images/speaker/6.jpg" alt="Speaker 6">
-        <div class="speaker-name">Speaker 6</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-</div>
-
-<!-- Row 3 with 2 centered cards -->
-<div class="speaker-row">
-    <div class="speaker-card">
-        <img src="images/speaker/7.jpg" alt="Speaker 7">
-        <div class="speaker-name">Speaker 7</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-    <div class="speaker-card">
-        <img src="images/speaker/2.jpg" alt="Speaker 8">
-        <div class="speaker-name">Speaker 8</div>
-        <div class="speaker-title">Designation</div>
-    </div>
-</div>
+                    <!-- Speaker Cards -->
+                    <div class="speaker-grid">
+                        <!-- Row 1 -->
+                        <div class="speaker-card">
+                            <img src="images/speaker/1.jpg" alt="Speaker 1">
+                            <div class="speaker-name">Dr. Jay Prakash Saini</div>
+                            <div class="speaker-title">Vice Chancellor</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/8.jpg" alt="Speaker 2">
+                            <div class="speaker-name">Chandra Prakash Priyadarshi</div>
+                            <div class="speaker-title">Registrar</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/3.jpg" alt="Speaker 3">
+                            <div class="speaker-name">Speaker 3</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                    
+                        <!-- Row 2 -->
+                        <div class="speaker-card">
+                            <img src="images/speaker/4.jpg" alt="Speaker 4">
+                            <div class="speaker-name">Speaker 4</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/5.jpg" alt="Speaker 5">
+                            <div class="speaker-name">Speaker 5</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/6.jpg" alt="Speaker 6">
+                            <div class="speaker-name">Speaker 6</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 3 with 2 centered cards -->
+                    <div class="speaker-row">
+                        <div class="speaker-card">
+                            <img src="images/speaker/7.jpg" alt="Speaker 7">
+                            <div class="speaker-name">Speaker 7</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/2.jpg" alt="Speaker 8">
+                            <div class="speaker-name">Speaker 8</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                    </div>
 
        
                           </div> 
