@@ -21,6 +21,103 @@
     <link rel="stylesheet" href="assets\css\styles.css">
 
     <title>DETIS-25</title>
+
+    <style>
+        .value-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+            padding: 0 20px;
+            max-width: 1200px;
+        }
+    
+        .value-box {
+            background-color: #2642f1;
+            color: white;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .value-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        .value-box h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    
+        .value-box p {
+            color: #ffd700;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .speaker-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        
+                .speaker-card {
+                background: linear-gradient(to bottom right, #dfefff, #c0d4ff);
+                border-radius: 20px;
+                padding: 2rem 1rem;
+                text-align: center;
+                width: 300px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border: 1.5px solid purple; /* ✅ purple border */
+                outline: 1px solid rgba(255, 255, 255, 0.2); /* ✅ faint white glow around the purple */
+            }
+
+
+        
+            .speaker-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+        
+            .speaker-card img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                border: 5px solid white;
+            }
+        
+            .speaker-name {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #000;
+                margin-bottom: 0.25rem;
+            }
+        
+            .speaker-title {
+                font-size: 0.9rem;
+                color: #6666cc;
+            }
+        
+            /* Ensure the last row (with 2 items) is centered */
+            .speaker-row {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+    </style>
+    
 </head>
 
 <body>
@@ -100,45 +197,6 @@
         </section>
 
 <!--==================== VALUE BOXES SECTION ====================-->
-<style>
-    .value-boxes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin: 40px auto;
-        padding: 0 20px;
-        max-width: 1200px;
-    }
-
-    .value-box {
-        background-color: #2642f1;
-        color: white;
-        border-radius: 20px;
-        padding: 30px 20px;
-        text-align: center;
-        flex: 1 1 300px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .value-box:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .value-box h3 {
-        color: #ffffff;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .value-box p {
-        color: #ffd700;
-        font-size: 1rem;
-        margin: 0;
-    }
-</style>
 
 <div class="value-boxes">
     <div class="value-box">
@@ -154,6 +212,94 @@
         <p>Engage with peers and industry leaders in the field.</p>
     </div>
 </div>
+
+
+
+<!--==================== Our Esteemed Dignitaries SECTION ====================-->
+        <section class="speaker container">
+            <div class="about__content">
+                <div class="guidelines__data">
+                    <h1 class="subpage__title">Our Esteemed Dignitaries</h1>
+                </div>
+
+        <!--Carousel Wrapper-->
+                   <!------ Include the above in your HEAD tag ---------->
+                   
+                    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+                   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+                    
+                       <!-- Page Content -->
+                      <div class="container page-top">
+                           <div class="row">
+                  
+                    <!-- Images -->
+                    <!-- Row 1 -->
+                    <div class="speaker-grid">
+                        <div class="speaker-card">
+                            <img src="images/dignitaries/vc.png" alt="Vice Chancellor">
+                            <div class="speaker-name">Dr. Jay Prakash Saini</div>
+                            <div class="speaker-title">Vice Chancellor</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/dignitaries/registrar.png" alt="Registrar">
+                            <div class="speaker-name">Shri Chandra Prakash Priyadarshi</div>
+                            <div class="speaker-title">Registrar</div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                                      
+  <!--/.Carousel Wrapper-->
+                
+                <p class="registration__info">
+                    <b></b>
+                </p>
+            </div>
+    </section>
+
+
+
+        <!--==================== Featured Volume Editors SECTION ====================-->
+        <section class="speaker container">
+            <div class="about__content">
+                <div class="guidelines__data">
+                    <h1 class="subpage__title">Featured Volume Editors</h1>
+                </div>
+
+        <!--Carousel Wrapper-->
+                   <!------ Include the above in your HEAD tag ---------->
+                   
+                    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+                   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+                    
+                       <!-- Page Content -->
+                      <div class="container page-top">
+                           <div class="row">
+                  
+                    <!-- Images -->
+                    <!-- Row 1 -->
+                    <div class="speaker-grid">
+                        <div class="speaker-card">
+                            <img src="images/dignitaries/vc.png" alt="Dr. Satya Prakash Yadav">
+                            <div class="speaker-name">Dr. Satya Prakash Yadav</div>
+                            <div class="speaker-title">Associate Professor<br>Madan Mohan Malaviya<br>University of Technology,<br>Gorakhpur</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/dignitaries/registrar.png" alt="Prof. H. Herbert Song">
+                            <div class="speaker-name">Prof. H. Herbert Song</div>
+                            <div class="speaker-title">Professor<br>Department of Information<br>Systems,<br>University of Maryland</div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                                      
+  <!--/.Carousel Wrapper-->
+                
+                <p class="registration__info">
+                    <b></b>
+                </p>
+            </div>
+    </section>
     
 
 </main>
