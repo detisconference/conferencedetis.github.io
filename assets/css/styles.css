@@ -344,7 +344,7 @@ button {
 }
 
 .home__details-img {
-  position: absolute;
+  position: static;
   right: 0.5rem;
   top: 1rem;
 }
@@ -353,7 +353,7 @@ button {
 .home__details-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  text-align: center;
+  text-align: right;
 }
 
 .home__subtitle {
