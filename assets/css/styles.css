@@ -344,17 +344,16 @@ button {
 }
 
 .home__details-img {
-  position: static;
-  margin-top: 1rem;
-  text-align: center;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
 }
 
 .home__details-title,
 .home__details-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  text-align: center;
-  margin: 0.25rem 0;
+  text-align: right;
 }
 
 
