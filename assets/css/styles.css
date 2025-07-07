@@ -353,7 +353,7 @@ button {
 .home__details-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  text-align: right;
+  text-align: center;
 }
 
 .home__subtitle {
