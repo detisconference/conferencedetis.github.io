@@ -20,7 +20,67 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets\css\styles.css">
 
-    <title>AutoCom-25</title>
+    <title>DETIS-25</title>
+
+        <style>
+            .speaker-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        
+                .speaker-card {
+                background: linear-gradient(to bottom right, #dfefff, #c0d4ff);
+                border-radius: 20px;
+                padding: 2rem 1rem;
+                text-align: center;
+                width: 300px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border: 1.5px solid purple; /* ✅ purple border */
+                outline: 1px solid rgba(255, 255, 255, 0.2); /* ✅ faint white glow around the purple */
+            }
+
+
+        
+            .speaker-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+        
+            .speaker-card img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                border: 5px solid white;
+            }
+        
+            .speaker-name {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #000;
+                margin-bottom: 0.25rem;
+            }
+        
+            .speaker-title {
+                font-size: 0.9rem;
+                color: #6666cc;
+            }
+        
+            /* Ensure the last row (with 2 items) is centered */
+            .speaker-row {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        </style>
+
+    
 </head>
 
 <body>
@@ -28,9 +88,9 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="assets\img\Logo_AutoCom_800px.png" alt="AutoCom Logo" class="nav__logo-img">
+                <img src="assets\img\Logo_DETIS.png" alt="DETIS Logo" class="nav__logo-img">
             </a>
-            <img src="assets\img\up_section_1.png" alt="IEEE Logo" height="70" width="140" class="">
+            <!--<img src="assets\img\up_section_1.png" alt="IEEE Logo" height="70" width="140" class="">-->
 
 
 
@@ -75,13 +135,14 @@
                 <i class='bx bx-menu'></i>
             </div>
 
-            <a href="https://www.gehu.ac.in/" target="_blank" class="nav__logo">
-                <img src="assets\img\Logo_GEHU_64px.png" alt="Graphic Era Hill University Logo" class="nav__logo-img">
+            <a href="https://mmmut.ac.in/" target="_blank" class="nav__logo">
+                <img src="assets\img\Logo_MMMUT.png" alt="Madan Mohan Malaviya University of Technology Logo" class="nav__logo-img">
             </a>
         </nav>
     </header>
 
     <main class="main">
+
         <!--==================== SPEAKER SECTION ====================-->
         <section class="speaker container">
             <div class="about__content">
@@ -101,23 +162,61 @@
                        <!-- Page Content -->
                       <div class="container page-top">
                            <div class="row">
-                   <table>
-                       <tr>
-                           <td><img src="images/speaker/1.jpg"></td>
-                           <td><img src="images/speaker/8.jpg"></td>
-                           <td><img src="images/speaker/3.jpg"></td>
-                       </tr>
-                       <tr>
-                           <td><img src="images/speaker/4.jpg"></td>
-                           <td><img src="images/speaker/5.jpg"></td>
-                           <td><img src="images/speaker/6.jpg"></td>
-                       </tr>  
-                       <tr>
-                           <td><img src="images/speaker/7.jpg"></td>
-                           <td><img src="images/speaker/2.jpg"></td>
-                           <td></td>
-                       </tr>                         
-                   </table>
+                  
+
+                    <!-- Speaker Cards -->
+                    <!-- Row 1 -->
+                    <div class="speaker-grid">
+                        <div class="speaker-card">
+                            <img src="images/speaker/1.jpg" alt="Speaker 1">
+                            <div class="speaker-name">Dr. Jay Prakash Saini</div>
+                            <div class="speaker-title">Vice Chancellor</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/8.jpg" alt="Speaker 2">
+                            <div class="speaker-name">Chandra Prakash Priyadarshi</div>
+                            <div class="speaker-title">Registrar</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/3.jpg" alt="Speaker 3">
+                            <div class="speaker-name">Speaker 3</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                    </div>
+                    
+                        <!-- Row 2 -->
+                        <div class="speaker-grid">
+                            <div class="speaker-card">
+                                <img src="images/speaker/4.jpg" alt="Speaker 4">
+                                <div class="speaker-name">Speaker 4</div>
+                                <div class="speaker-title">Designation</div>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="images/speaker/5.jpg" alt="Speaker 5">
+                                <div class="speaker-name">Speaker 5</div>
+                                <div class="speaker-title">Designation</div>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="images/speaker/6.jpg" alt="Speaker 6">
+                                <div class="speaker-name">Speaker 6</div>
+                                <div class="speaker-title">Designation</div>
+                            </div>
+                        </div>
+                    
+                    <!-- Row 3 with 2 centered cards -->
+                    <div class="speaker-row">
+                        <div class="speaker-card">
+                            <img src="images/speaker/7.jpg" alt="Speaker 7">
+                            <div class="speaker-name">Speaker 7</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="images/speaker/2.jpg" alt="Speaker 8">
+                            <div class="speaker-name">Speaker 8</div>
+                            <div class="speaker-title">Designation</div>
+                        </div>
+                    </div>
+
        
                           </div> 
                
@@ -132,6 +231,7 @@
                 </p>
             </div>
         </section>
+
                         
                 </div>
         </section>
@@ -143,21 +243,21 @@
         <div class="footer__container container grid">
             <div class="footer__container">
                 <a href="index.html" class="footer__logo">
-                    <img src="assets\img\Logo_AutoCom_800px.png" alt="AutoCom Logo" class="footer__logo-img">
-                    AutoCom-25
+                    <img src="assets\img\Logo_DETIS.png" alt="DETIS Logo" class="footer__logo-img">
+                    DETIS-25
                 </a>
 
-                <p class="footer__description">International Conference on Automation & Computation</p>
+                <p class="footer__description">International Conference on Demystifyinig Emerging Trends in Intelligent Systems</p>
 
                 <div class="footer__social">
-                    <a href="https://www.facebook.com/gehu.official/" target="_blank" class="footer__social-link">
+                    <a href="https://www.facebook.com/mmmut.ac.in/" target="_blank" class="footer__social-link">
                         <i class="bx bxl-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/graphicerahilluniversity/" target="_blank"
+                    <a href="https://www.instagram.com/mmmut_university/" target="_blank"
                         class="footer__social-link">
                         <i class="bx bxl-instagram-alt"></i>
                     </a>
-                    <a href="https://twitter.com/graphicerahill1" target="_blank" class="footer__social-link">
+                    <a href="https://x.com/MmmutOfficial" target="_blank" class="footer__social-link">
                         <i class="bx bxl-twitter"></i>
                     </a>
                 </div>
@@ -195,12 +295,15 @@
                     <li>
                         <a href="registration.html" class="footer__link">Registration</a>
                     </li>
+                    <li>
+                        <a href="contact.html" class="footer__link">Contact Us</a>
+                    </li>
 
                 </ul>
             </div>
         </div>
 
-        <span class="footer__copy">&#169; 2025 Graphic Era Hill University.<br>All rights reserved.</span>
+        <span class="footer__copy">&#169; 2025 Madan Mohan Malaviya University of Technology<br>All rights reserved</span>
 
 
     </footer>
