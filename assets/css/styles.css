@@ -345,16 +345,18 @@ button {
 
 .home__details-img {
   position: static;
-  right: 0.5rem;
-  top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .home__details-title,
 .home__details-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  text-align: right;
+  text-align: center;
+  margin: 0.25rem 0;
 }
+
 
 .home__subtitle {
   font-size: var(--h3-font-size);
