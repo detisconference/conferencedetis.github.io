@@ -177,7 +177,7 @@ button {
 }
 
 .nav__logo-img {
-  width: 3rem;
+  width: 2rem;
   height: 100%;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
@@ -844,7 +844,7 @@ button {
 
 
   .nav__logo-img {
-    width: 6rem;
+    width: 4rem;
     height: 100%;
   }
 
