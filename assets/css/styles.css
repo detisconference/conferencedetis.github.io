@@ -178,8 +178,7 @@ button {
 
 .nav__logo-img {
   width: 3rem;
-  height: auto;
-  object-fit: contain;
+  height: 200%;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
@@ -846,7 +845,7 @@ button {
 
   .nav__logo-img {
     width: 6rem;
-    height: auto%;
+    height: 200%;
   }
 
   .home__img {
